@@ -21,5 +21,14 @@
    <feature url="features/net.jeeeyul.swtend.feature_1.1.0.jar" id="net.jeeeyul.swtend.feature" version="1.1.0">
       <category name="eclipse-jeeeyul"/>
    </feature>
+   <feature url="features/net.jeeeyul.eclipse.themes.feature_1.7.8.jar" id="net.jeeeyul.eclipse.themes.feature" version="1.7.8">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
+   <feature url="features/net.jeeeyul.pdetools.feature_1.2.0.jar" id="net.jeeeyul.pdetools.feature" version="1.2.0">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
+   <feature url="features/net.jeeeyul.swtend.feature_1.2.0.jar" id="net.jeeeyul.swtend.feature" version="1.2.0">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins"/>
 </site>
