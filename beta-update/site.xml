@@ -3,13 +3,13 @@
    <description name="Jeeeyul&apos;s Eclipse Update Site (Beta)" url="http://jeeeyul.github.io/beta-update">
       Provides Eclipse Chrome Theme and PDE-Tools
    </description>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_1.7.10.201402241311.jar" id="net.jeeeyul.eclipse.themes.feature" version="1.7.10.201402241311">
+   <feature url="features/net.jeeeyul.eclipse.themes.feature_1.7.10.201402252031.jar" id="net.jeeeyul.eclipse.themes.feature" version="1.7.10.201402252031">
       <category name="eclipse-jeeeyul"/>
    </feature>
-   <feature url="features/net.jeeeyul.pdetools.feature_1.2.0.201402241311.jar" id="net.jeeeyul.pdetools.feature" version="1.2.0.201402241311">
+   <feature url="features/net.jeeeyul.pdetools.feature_1.2.0.201402252031.jar" id="net.jeeeyul.pdetools.feature" version="1.2.0.201402252031">
       <category name="eclipse-jeeeyul"/>
    </feature>
-   <feature url="features/net.jeeeyul.swtend.feature_1.2.2.201402241311.jar" id="net.jeeeyul.swtend.feature" version="1.2.2.201402241311">
+   <feature url="features/net.jeeeyul.swtend.feature_1.2.2.201402252031.jar" id="net.jeeeyul.swtend.feature" version="1.2.2.201402252031">
       <category name="eclipse-jeeeyul"/>
    </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins (Beta)"/>
