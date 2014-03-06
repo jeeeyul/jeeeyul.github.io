@@ -34,7 +34,7 @@ This p2 repository was created to provide Eclipse plugin update site for 2 proje
 
 Beta versions are at this p2 repository:
 
-http://jeeeyul.github.io/beta-update
+`http://jeeeyul.github.io/beta-update`
 
 With [Nodeclipse CLI Installer](http://marketplace.eclipse.org/content/nodeclipse-cli-installer) 
 it is possible to update from command line from directory with Eclipse
