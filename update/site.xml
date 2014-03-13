@@ -33,5 +33,8 @@
    <feature url="features/net.jeeeyul.swtend.feature_1.2.3.jar" id="net.jeeeyul.swtend.feature" version="1.2.3">
       <category name="eclipse-jeeeyul"/>
    </feature>
+   <feature url="features/net.jeeeyul.swtend.feature_1.2.4.jar" id="net.jeeeyul.swtend.feature" version="1.2.4">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins"/>
 </site>
