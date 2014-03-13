@@ -12,5 +12,11 @@
    <feature url="features/net.jeeeyul.swtend.feature_1.2.3.jar" id="net.jeeeyul.swtend.feature" version="1.2.3">
       <category name="eclipse-jeeeyul"/>
    </feature>
+   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.0.1.201403132113.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.0.1.201403132113">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
+   <feature url="features/net.jeeeyul.swtend.feature_1.2.5.201403132113.jar" id="net.jeeeyul.swtend.feature" version="1.2.5.201403132113">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins (Beta)"/>
 </site>
