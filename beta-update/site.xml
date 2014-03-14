@@ -21,5 +21,8 @@
    <feature url="features/net.jeeeyul.eclipse.themes.feature_2.0.1.201403132137.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.0.1.201403132137">
       <category name="eclipse-jeeeyul"/>
    </feature>
+   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.0.1.201403141022.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.0.1.201403141022">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins (Beta)"/>
 </site>
