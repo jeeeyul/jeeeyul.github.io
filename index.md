@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: default
 title: jeeeyul.github.io
 ---
 
