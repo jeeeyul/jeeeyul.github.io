@@ -4,6 +4,8 @@
 
 html, body{
 	background-color: #333;
+	padding: 0px;
+	margin: 0px;
 }
 
 .container{
