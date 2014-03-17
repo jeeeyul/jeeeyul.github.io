@@ -24,9 +24,10 @@ a, a:visited, a:active, a:hover {
 	color: cornflowerblue
 }
 
-pre {
+code {
 	padding: 5px;
 	background-color: #eee;
 	border-radius: 5px;
 	border: solid 1px #ccc;
+	font-family: monospace;
 }
