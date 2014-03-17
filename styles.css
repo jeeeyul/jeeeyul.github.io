@@ -8,7 +8,7 @@ html, body {
 	margin: 0px;
 }
 
-h2 {
+h1, h2, h3 {
 	border-bottom: dashed 1px #ccc;
 }
 

@@ -4,9 +4,9 @@ title: jeeeyul.github.io
 ---
 
 
-# jeeeyul.github.io
+# eclipse.jeeeyul.net
 
-`http://jeeeyul.github.io/update` 
+`http://eclipse.jeeeyul.net/update` 
 
 This p2 repository was created to provide Eclipse plugin update site for 2 projects:  
 
