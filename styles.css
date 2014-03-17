@@ -9,8 +9,7 @@ html, body{
 }
 
 h2 { 
-	border-top: dashed 1px #eee;
-	border-bottom: dashed 1px #aaa;
+	border-bottom: dashed 1px #eee;
 }
 
 .container{
