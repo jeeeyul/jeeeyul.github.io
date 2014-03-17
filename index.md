@@ -16,19 +16,7 @@ This p2 repository was created to provide Eclipse plugin update site for 2 proje
 [Adding an Update Site Help](http://marketplace.eclipse.org/updatesite/help?url=http://jeeeyul.github.io/update)
 
 ## Screenshots:
-
-<a href="https://github.com/jeeeyul/pde-tools">
-<img src="https://raw.github.com/jeeeyul/pde-tools/master/net.jeeeyul.pdetools.resource/clipboard-history-paste.png" width="350" height="200" /></a>
-<a href="https://github.com/jeeeyul/pde-tools">
-<img src="https://raw.github.com/jeeeyul/pde-tools/master/net.jeeeyul.pdetools.resource/icon-preview.png" width="350" height="200" /></a>
-<a href="https://github.com/jeeeyul/pde-tools">
-<img src="https://raw.github.com/jeeeyul/pde-tools/master/net.jeeeyul.pdetools.resource/shared-image-generator.png" width="350" height="200" /></a>
-<a href="https://github.com/jeeeyul/pde-tools">
-<img src="https://raw.github.com/jeeeyul/pde-tools/master/net.jeeeyul.pdetools.resource/bundle-image-navigator.png" width="350" height="200" /></a>
-<a href="https://github.com/jeeeyul/pde-tools">
-<img src="https://raw.github.com/jeeeyul/pde-tools/master/net.jeeeyul.pdetools.resource/crazy-outline.png" width="350" height="200" /></a>
-<a href="https://github.com/jeeeyul/pde-tools">
-<img src="https://raw.github.com/jeeeyul/pde-tools/master/net.jeeeyul.pdetools.resource/release-note/1.1/workspace-launcher.png" width="350" height="200" /></a>
+![Eclipse Themes](https://github.com/jeeeyul/eclipse-themes/wiki/images/screenshot-default.png)
 
 ## Beta versions
 
