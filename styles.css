@@ -8,6 +8,10 @@ html, body{
 	margin: 0px;
 }
 
+h2 { 
+	border-bottom: dashed 1px #eee;
+}
+
 .container{
 	padding: 10px 20px;
 	width: 1024px;
