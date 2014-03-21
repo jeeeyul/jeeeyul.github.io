@@ -1,0 +1,40 @@
+style "gtkcompact" { 
+ font_name="Liberation 8"
+ GtkButton::defaultborder={0,0,0,0} 
+ GtkButton::defaultoutsideborder={0,0,0,0} 
+ GtkButtonBox::childminwidth=0 
+ GtkButtonBox::childminheigth=0 
+ GtkButtonBox::childinternalpadx=0 
+ GtkButtonBox::childinternalpady=0 
+ GtkMenu::vertical-padding=0 
+ GtkMenuBar::internalpadding=0 
+ GtkMenuItem::horizontalpadding=2 
+ GtkToolbar::internal-padding=0 
+ GtkToolbar::space-size=0 
+ GtkOptionMenu::indicatorsize=0 
+ GtkOptionMenu::indicatorspacing=0 
+ GtkPaned::handlesize=4 
+ GtkRange::troughborder=0 
+ GtkRange::stepperspacing=0 
+ GtkScale::valuespacing=0 
+ GtkScrolledWindow::scrollbarspacing=0 
+ GtkExpander::expandersize=10 
+ GtkExpander::expanderspacing=0 
+ GtkTreeView::vertical-separator=0 
+ GtkTreeView::horizontal-separator=0 
+ GtkTreeView::expander-size=8 
+ GtkTreeView::fixed-height-mode=TRUE 
+ GtkWidget::focuspadding=1 
+ xthickness=2 
+ ythickness=2
+} 
+ 
+ 
+class "GtkWidget" style "gtkcompact"
+ 
+style "gtkcompactextra" { 
+ xthickness=0 ythickness=0 
+} 
+class "GtkButton" style "gtkcompactextra"
+class "GtkToolbar" style "gtkcompactextra"
+class "GtkPaned" style "gtkcompactextra"
