@@ -39,5 +39,11 @@
    <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211208.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211208">
       <category name="eclipse-jeeeyul"/>
    </feature>
+   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211304.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211304">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
+   <feature url="features/net.jeeeyul.swtend.feature_2.1.1.qualifier.jar" id="net.jeeeyul.swtend.feature" version="2.1.1.qualifier">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins (Beta)"/>
 </site>
