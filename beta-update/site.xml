@@ -3,58 +3,13 @@
    <description name="Jeeeyul&apos;s Eclipse Update Site (Beta)" url="http://jeeeyul.github.io/beta-update">
       Provides Eclipse Chrome Theme and PDE-Tools
    </description>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211310.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211310">
+   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.5.201403250856.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.5.201403250856">
       <category name="eclipse-jeeeyul"/>
    </feature>
-   <feature url="features/net.jeeeyul.pdetools.feature_1.2.1.201403211310.jar" id="net.jeeeyul.pdetools.feature" version="1.2.1.201403211310">
+   <feature url="features/net.jeeeyul.pdetools.feature_1.2.1.201403250856.jar" id="net.jeeeyul.pdetools.feature" version="1.2.1.201403250856">
       <category name="eclipse-jeeeyul"/>
    </feature>
-   <feature url="features/net.jeeeyul.swtend.feature_2.1.1.201403211310.jar" id="net.jeeeyul.swtend.feature" version="2.1.1.201403211310">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211323.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211323">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211426.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211426">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211451.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211451">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211508.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211508">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211534.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211534">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.3.201403211537.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.3.201403211537">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.swtend.feature_2.1.1.201403211537.jar" id="net.jeeeyul.swtend.feature" version="2.1.1.201403211537">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.4.201403211820.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.4.201403211820">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.swtend.feature_2.2.0.201403211822.jar" id="net.jeeeyul.swtend.feature" version="2.2.0.201403211822">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.4.201403211858.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.4.201403211858">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.4.201403211912.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.4.201403211912">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.4.201403211920.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.4.201403211920">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.swtend.feature_2.2.0.201403211921.jar" id="net.jeeeyul.swtend.feature" version="2.2.0.201403211921">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.4.201403211953.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.4.201403211953">
-      <category name="eclipse-jeeeyul"/>
-   </feature>
-   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.4.201403241719.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.4.201403241719">
+   <feature url="features/net.jeeeyul.swtend.feature_2.2.0.201403250856.jar" id="net.jeeeyul.swtend.feature" version="2.2.0.201403250856">
       <category name="eclipse-jeeeyul"/>
    </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins (Beta)"/>
