@@ -14,10 +14,10 @@ This p2 repository was created to provide Eclipse plugin update site for 2 proje
 ### Update Site URL
 
 
-| Kind   | URL                                    |
-|--------|----------------------------------------|
-| Stable | http://eclipse.jeeeyul.net/update      |
-| Beta   | http://eclipse.jeeeyul.net/beta-update |
+| Kind   | URL                                      |
+|--------|------------------------------------------|
+| Stable | `http://eclipse.jeeeyul.net/update`      |
+| Beta   | `http://eclipse.jeeeyul.net/beta-update` |
 
 * [Adding an Update Site Help](http://marketplace.eclipse.org/updatesite/help?url=http://jeeeyul.github.io/update)
 * You can also [Download Update Site](https://github.com/jeeeyul/jeeeyul.github.io/releases).
