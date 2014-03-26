@@ -41,6 +41,19 @@ pre {
 }
 
 pre > code {
+	display: block;
 	padding: 0px;
 	border : none;
+}
+
+table{
+	border-spacing: 2px;	
+}
+
+th{
+	background-color: #ccc;
+}
+
+td{
+	background-color: #eee;
 }
