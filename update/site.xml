@@ -72,5 +72,11 @@
    <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.5.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.5">
       <category name="eclipse-jeeeyul"/>
    </feature>
+   <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.6.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.6">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
+   <feature url="features/net.jeeeyul.swtend.feature_2.2.1.jar" id="net.jeeeyul.swtend.feature" version="2.2.1">
+      <category name="eclipse-jeeeyul"/>
+   </feature>
    <category-def name="eclipse-jeeeyul" label="Jeeeyul&apos;s Eclipse Plugins"/>
 </site>
