@@ -47,7 +47,12 @@ pre > code {
 }
 
 table{
-	border-spacing: 2px;	
+	border-spacing: 2px;
+	border-collapse: true;
+}
+
+th, td{
+	padding: 10px 20px;
 }
 
 th{
