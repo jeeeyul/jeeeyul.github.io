@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description name="Jeeeyul&apos;s Eclipse Update Site" url="http://jeeeyul.github.io/update">
+   <description name="Jeeeyul&apos;s Eclipse Update Site" url="http://eclipse.jeeeyul.net/update">
       Provides Eclipse Chrome Theme and PDE-Tools
    </description>
    <feature url="features/net.jeeeyul.eclipse.themes.feature_2.1.7.jar" id="net.jeeeyul.eclipse.themes.feature" version="2.1.7">
