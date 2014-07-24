@@ -9,7 +9,7 @@ style "gtkcompact" {
  GtkMenu::vertical-padding=0 
  GtkMenuBar::internalpadding=0 
  GtkMenuItem::horizontalpadding=2 
- GtkToolbar::internal-padding=0 
+ GtkToolbar::internal-padding=1 
  GtkToolbar::space-size=0 
  GtkOptionMenu::indicatorsize=0 
  GtkOptionMenu::indicatorspacing=0 
@@ -33,7 +33,8 @@ style "gtkcompact" {
 class "GtkWidget" style "gtkcompact"
  
 style "gtkcompactextra" { 
- xthickness=0 ythickness=0 
+ xthickness=0 
+ ythickness=0 
 } 
 class "GtkButton" style "gtkcompactextra"
 class "GtkToolbar" style "gtkcompactextra"
