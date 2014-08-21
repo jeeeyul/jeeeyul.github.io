@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="project" default="default">
+<project name="project" default="removeFeatureAndPlugins">
 	<taskdef resource="net/sf/antcontrib/antlib.xml"
 	         classpath="${basedir}/libs/ant-contrib-1.0b3.jar" />
 	<taskdef name="xmltask"
@@ -7,20 +7,31 @@
 	         classpath="${basedir}/libs/xmltask.jar" />
 
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
+
+	<!-- Setup Start -->
 	<property name="repository" location="${basedir}/../beta-update" />
 	<property name="versions"
 	          value="2.1.7.I20140813-174908,2.1.8.I20140820-124535" />
+	<!-- Setup End -->
 
-	<target name="default" description="description">
-		<antcall target="test">
-			<param name="repository" value="${basedir}/../beta-update" />
-			<param name="prefix" value="net.jeeeyul.pdetools" />
-			<param name="version" value="asd" />
-		</antcall>
-	</target>
+	<loadproperties srcfile="${basedir}/sign.properties" />
 
-	<target name="test">
+
+	<target name="removeFeatureAndPlugins">
 		<foreach param="version" list="${versions}" target="remove" />
+
+		<jar destfile="${repository}/artifacts.jar">
+			<fileset dir="${repository}" includes="artifacts.xml" />
+		</jar>
+		<jar destfile="${repository}/content.jar">
+			<fileset dir="${repository}" includes="content.xml" />
+		</jar>
+		<delete dir="${repository}" includes="*.xml" />
+		<foreach target="signjar" param="file">
+			<path>
+				<fileset dir="${repository}" includes="*.jar" />
+			</path>
+		</foreach>
 	</target>
 
 	<target name="remove">
@@ -43,8 +54,12 @@
 				               input="@{e}"
 				               regexp="([^/]*)_(.*)\.jar"
 				               select="\2" />
-				<echo>@{e}</echo>
-				<echo>${e.id} - ${e.version}</echo>
+				<p2.remove.iu>
+					<repository location="${repository}" />
+					<iu id="${e.id}.feature.group" version="${e.version}" />
+				</p2.remove.iu>
+
+				<delete file="@{e}" />
 			</sequential>
 		</for>
 		<for param="e">
@@ -64,14 +79,29 @@
 				               input="@{e}"
 				               regexp="([^/]*)_(.*)\.jar"
 				               select="\2" />
-				<echo>@{e}</echo>
-				<echo>${e.id} - ${e.version}</echo>
-
 				<p2.remove.iu>
 					<repository location="${repository}" />
 					<iu id="${e.id}" version="${e.version}" />
 				</p2.remove.iu>
 			</sequential>
 		</for>
+	</target>
+
+	<target name="signjar"
+	        description="Signs given ${file} if keystore exists.">
+		<echo>${keystore}</echo>
+		<available file="${keystore}" property="keystore.exists" />
+		<if>
+			<equals arg1="${keystore.exists}" arg2="true" />
+			<then>
+				<signjar jar="${file}"
+				         alias="${alias}"
+				         keystore="${keystore}"
+				         keypass="${keypass}"
+				         storepass="${storepass}"
+				         digestalg="SHA1"
+				         sigalg="SHA1withDSA" />
+			</then>
+		</if>
 	</target>
 </project>
