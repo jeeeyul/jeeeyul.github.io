@@ -6,16 +6,12 @@
 	         classname="com.oopsconsultancy.xmltask.ant.XmlTask"
 	         classpath="${basedir}/libs/xmltask.jar" />
 
-	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
-
 	<!-- Setup Start -->
+	<property name="prefix" value="net.jeeeyul.jsdt.node" />
 	<property name="repository" location="${basedir}/../beta-update" />
-	<property name="versions"
-	          value="2.1.7.I20140813-174908,2.1.8.I20140820-124535" />
+	<property name="versions" value="1.0.0.I20140814-124753" />
 	<!-- Setup End -->
-
 	<loadproperties srcfile="${basedir}/sign.properties" />
-
 
 	<target name="removeFeatureAndPlugins">
 		<foreach param="version" list="${versions}" target="remove" />
@@ -79,10 +75,12 @@
 				               input="@{e}"
 				               regexp="([^/]*)_(.*)\.jar"
 				               select="\2" />
+
 				<p2.remove.iu>
 					<repository location="${repository}" />
 					<iu id="${e.id}" version="${e.version}" />
 				</p2.remove.iu>
+				<delete file="@{e}" />
 			</sequential>
 		</for>
 	</target>
