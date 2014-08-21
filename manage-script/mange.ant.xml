@@ -7,9 +7,9 @@
 	         classpath="${basedir}/libs/xmltask.jar" />
 
 	<!-- Setup Start -->
-	<property name="prefix" value="net.jeeeyul.jsdt.node" />
+	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
 	<property name="repository" location="${basedir}/../beta-update" />
-	<property name="versions" value="1.0.0.I20140814-124753" />
+	<property name="versions" value="2.1.8.I20140821-121302" />
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
 
