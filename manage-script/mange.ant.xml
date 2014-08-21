@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default">
+	<taskdef resource="net/sf/antcontrib/antlib.xml"
+	         classpath="${basedir}/libs/ant-contrib-1.0b3.jar" />
+	<taskdef name="xmltask"
+	         classname="com.oopsconsultancy.xmltask.ant.XmlTask"
+	         classpath="${basedir}/libs/xmltask.jar" />
+
+	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
+	<property name="repository" location="${basedir}/../beta-update" />
+	<property name="versions"
+	          value="2.1.7.I20140813-174908,2.1.8.I20140820-124535" />
+
+	<target name="default" description="description">
+		<antcall target="test">
+			<param name="repository" value="${basedir}/../beta-update" />
+			<param name="prefix" value="net.jeeeyul.pdetools" />
+			<param name="version" value="asd" />
+		</antcall>
+	</target>
+
+	<target name="test">
+		<foreach param="version" list="${versions}" target="remove" />
+	</target>
+
+	<target name="remove">
+		<echo>Remove ${prefix}*_${version}.* from ${repository}</echo>
+
+		<for param="e">
+			<path>
+				<fileset dir="${repository}/features">
+					<include name="${prefix}*_${version}.*" />
+				</fileset>
+			</path>
+			<sequential>
+				<propertyregex property="e.id"
+				               override="true"
+				               input="@{e}"
+				               regexp="([^/]*)_.*\.jar"
+				               select="\1" />
+				<propertyregex property="e.version"
+				               override="true"
+				               input="@{e}"
+				               regexp="([^/]*)_(.*)\.jar"
+				               select="\2" />
+				<echo>@{e}</echo>
+				<echo>${e.id} - ${e.version}</echo>
+			</sequential>
+		</for>
+		<for param="e">
+			<path>
+				<fileset dir="${repository}/plugins">
+					<include name="${prefix}*_${version}.*" />
+				</fileset>
+			</path>
+			<sequential>
+				<propertyregex property="e.id"
+				               override="true"
+				               input="@{e}"
+				               regexp="([^/]*)_.*\.jar"
+				               select="\1" />
+				<propertyregex property="e.version"
+				               override="true"
+				               input="@{e}"
+				               regexp="([^/]*)_(.*)\.jar"
+				               select="\2" />
+				<echo>@{e}</echo>
+				<echo>${e.id} - ${e.version}</echo>
+
+				<p2.remove.iu>
+					<repository location="${repository}" />
+					<iu id="${e.id}" version="${e.version}" />
+				</p2.remove.iu>
+			</sequential>
+		</for>
+	</target>
+</project>
