@@ -7,14 +7,27 @@
 	         classpath="${basedir}/libs/xmltask.jar" />
 
 	<!-- Setup Start -->
-	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
+	<property name="prefix" value="net.jeeeyul.swtend" />
 	<property name="repository" location="${basedir}/../beta-update" />
-	<property name="versions" value="2.1.8.I20140821-121302" />
+	<property name="versions" value="2.2.4.I20140820-123815" />
 	<!-- Setup End -->
+	
 	<loadproperties srcfile="${basedir}/sign.properties" />
 
 	<target name="removeFeatureAndPlugins">
 		<foreach param="version" list="${versions}" target="remove" />
+
+		<var unset="true" name="repository.artifacts.exists" />
+		<available file="${repository}/artifacts.xml"
+		           property="repository.artifacts.exists" />
+		<if>
+			<equals arg1="${repository.artifacts.exists}" arg2="true" />
+			<else>
+				<fail message="Repository doesn't have any changes." />
+			</else>
+		</if>
+
+		<echo>${repository.artifacts.exists}</echo>
 
 		<jar destfile="${repository}/artifacts.jar">
 			<fileset dir="${repository}" includes="artifacts.xml" />
