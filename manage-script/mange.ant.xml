@@ -5,11 +5,11 @@
 	<taskdef name="xmltask"
 	         classname="com.oopsconsultancy.xmltask.ant.XmlTask"
 	         classpath="${basedir}/libs/xmltask.jar" />
-
+	
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.swtend" />
 	<property name="repository" location="${basedir}/../beta-update" />
-	<property name="versions" value="2.2.4.I20140820-123815" />
+	<property name="versions" value="2.2.4.I20140822-111008" />
 	<!-- Setup End -->
 	
 	<loadproperties srcfile="${basedir}/sign.properties" />
