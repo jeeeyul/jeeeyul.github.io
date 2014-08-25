@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="project" default="removeFeatureAndPlugins">
-	<taskdef resource="net/sf/antcontrib/antlib.xml"
-	         classpath="${basedir}/libs/ant-contrib-1.0b3.jar" />
-	<taskdef name="xmltask"
-	         classname="com.oopsconsultancy.xmltask.ant.XmlTask"
-	         classpath="${basedir}/libs/xmltask.jar" />
+	<taskdef resource="net/sf/antcontrib/antlib.xml" classpath="${basedir}/libs/ant-contrib-1.0b3.jar" />
+	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" classpath="${basedir}/libs/xmltask.jar" />
 
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
 	<property name="repository" location="${basedir}/../update" />
 	<property name="versions" value="2.1.8.I20140822-120155" />
-	
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
+
+	<target name="fix-repo">
+		<!--<p2.remove.iu>
+			<repository location="${repository}" />
+			<iu id="net.jeeeyul.eclipse.themes.feature.feature.group" version="2.1.8.I20140822-115059" />
+		</p2.remove.iu>
+		<p2.remove.iu>
+			<repository location="${repository}" />
+			<iu id="net.jeeeyul.eclipse.themes" version="2.1.8.I20140822-115059" />
+		</p2.remove.iu>
+
+		<p2.remove.iu>
+			<repository location="${repository}" />
+			<iu id="net.jeeeyul.swtend.feature.feature.group" version="2.2.4.I20140822-114914" />
+		</p2.remove.iu>
+		<p2.remove.iu>
+			<repository location="${repository}" />
+			<iu id="net.jeeeyul.swtend.feature.feature.group" version="2.2.4.I20140822-110559" />
+		</p2.remove.iu>
+
+		<p2.remove.iu>
+			<repository location="${repository}" />
+			<iu id="net.jeeeyul.swtend" version="2.2.4.I20140822-114914" />
+		</p2.remove.iu>
+		<p2.remove.iu>
+			<repository location="${repository}" />
+			<iu id="net.jeeeyul.swtend" version="2.2.4.I20140822-110559" />
+		</p2.remove.iu>
+-->
+		<jar destfile="${repository}/content.jar">
+			<fileset dir="${repository}" includes="content.xml" />
+		</jar>
+		<foreach target="signjar" param="file">
+			<path>
+				<fileset dir="${repository}" includes="*.jar" />
+			</path>
+		</foreach>
+	</target>
 
 	<target name="removeFeatureAndPlugins">
 		<foreach param="version" list="${versions}" target="remove" />
@@ -41,16 +75,8 @@
 				</fileset>
 			</path>
 			<sequential>
-				<propertyregex property="e.id"
-				               override="true"
-				               input="@{e}"
-				               regexp="([^/]*)_.*\.jar"
-				               select="\1" />
-				<propertyregex property="e.version"
-				               override="true"
-				               input="@{e}"
-				               regexp="([^/]*)_(.*)\.jar"
-				               select="\2" />
+				<propertyregex property="e.id" override="true" input="@{e}" regexp="([^/]*)_.*\.jar" select="\1" />
+				<propertyregex property="e.version" override="true" input="@{e}" regexp="([^/]*)_(.*)\.jar" select="\2" />
 				<p2.remove.iu>
 					<repository location="${repository}" />
 					<iu id="${e.id}.feature.group" version="${e.version}" />
@@ -66,16 +92,8 @@
 				</fileset>
 			</path>
 			<sequential>
-				<propertyregex property="e.id"
-				               override="true"
-				               input="@{e}"
-				               regexp="([^/]*)_.*\.jar"
-				               select="\1" />
-				<propertyregex property="e.version"
-				               override="true"
-				               input="@{e}"
-				               regexp="([^/]*)_(.*)\.jar"
-				               select="\2" />
+				<propertyregex property="e.id" override="true" input="@{e}" regexp="([^/]*)_.*\.jar" select="\1" />
+				<propertyregex property="e.version" override="true" input="@{e}" regexp="([^/]*)_(.*)\.jar" select="\2" />
 
 				<p2.remove.iu>
 					<repository location="${repository}" />
@@ -86,20 +104,13 @@
 		</for>
 	</target>
 
-	<target name="signjar"
-	        description="Signs given ${file} if keystore exists.">
+	<target name="signjar" description="Signs given ${file} if keystore exists.">
 		<echo>${keystore}</echo>
 		<available file="${keystore}" property="keystore.exists" />
 		<if>
 			<equals arg1="${keystore.exists}" arg2="true" />
 			<then>
-				<signjar jar="${file}"
-				         alias="${alias}"
-				         keystore="${keystore}"
-				         keypass="${keypass}"
-				         storepass="${storepass}"
-				         digestalg="SHA1"
-				         sigalg="SHA1withDSA" />
+				<signjar jar="${file}" alias="${alias}" keystore="${keystore}" keypass="${keypass}" storepass="${storepass}" digestalg="SHA1" sigalg="SHA1withDSA" />
 			</then>
 		</if>
 	</target>
