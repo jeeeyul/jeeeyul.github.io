@@ -8,8 +8,9 @@
 
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
-	<property name="repository" location="${basedir}/../beta-update" />
-	<property name="versions" value="2.1.8.I20140821-121302" />
+	<property name="repository" location="${basedir}/../update" />
+	<property name="versions" value="2.1.8.I20140822-120155" />
+	
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
 
