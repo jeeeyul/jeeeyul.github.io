@@ -3,41 +3,22 @@
 	<taskdef resource="net/sf/antcontrib/antlib.xml" classpath="${basedir}/libs/ant-contrib-1.0b3.jar" />
 	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" classpath="${basedir}/libs/xmltask.jar" />
 
+	<!--
+	
+	net.jeeeyul.eclipse.themes.feature_2.1.8.I20140821-153304.jar
+net.jeeeyul.eclipse.themes.feature_2.1.9.I20140825-092324.jar
+net.jeeeyul.eclipse.themes.feature_2.1.9.I20140825-130443.jar
+	
+	-->
+	
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
-	<property name="repository" location="${basedir}/../update" />
-	<property name="versions" value="2.1.8.I20140825-230830" />
+	<property name="repository" location="${basedir}/../beta-update" />
+	<property name="versions" value="2.1.9.I20140825-130443" />
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
 
 	<target name="fix-repo">
-		<!--<p2.remove.iu>
-			<repository location="${repository}" />
-			<iu id="net.jeeeyul.eclipse.themes.feature.feature.group" version="2.1.8.I20140822-115059" />
-		</p2.remove.iu>
-		<p2.remove.iu>
-			<repository location="${repository}" />
-			<iu id="net.jeeeyul.eclipse.themes" version="2.1.8.I20140822-115059" />
-		</p2.remove.iu>
-
-		<p2.remove.iu>
-			<repository location="${repository}" />
-			<iu id="net.jeeeyul.swtend.feature.feature.group" version="2.2.4.I20140822-114914" />
-		</p2.remove.iu>
-		<p2.remove.iu>
-			<repository location="${repository}" />
-			<iu id="net.jeeeyul.swtend.feature.feature.group" version="2.2.4.I20140822-110559" />
-		</p2.remove.iu>
-
-		<p2.remove.iu>
-			<repository location="${repository}" />
-			<iu id="net.jeeeyul.swtend" version="2.2.4.I20140822-114914" />
-		</p2.remove.iu>
-		<p2.remove.iu>
-			<repository location="${repository}" />
-			<iu id="net.jeeeyul.swtend" version="2.2.4.I20140822-110559" />
-		</p2.remove.iu>
--->
 		<jar destfile="${repository}/content.jar">
 			<fileset dir="${repository}" includes="content.xml" />
 		</jar>
