@@ -5,16 +5,14 @@
 
 	<!--
 	
-	net.jeeeyul.eclipse.themes.feature_2.1.8.I20140821-153304.jar
-net.jeeeyul.eclipse.themes.feature_2.1.9.I20140825-092324.jar
-net.jeeeyul.eclipse.themes.feature_2.1.9.I20140825-130443.jar
+	net.jeeeyul.eclipse.themes.feature_2.1.8.I20140826-104830.jar
 	
 	-->
 	
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
-	<property name="repository" location="${basedir}/../beta-update" />
-	<property name="versions" value="2.1.9.I20140825-130443" />
+	<property name="repository" location="${basedir}/../update" />
+	<property name="versions" value="2.1.8.I20140826-104830" />
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
 
