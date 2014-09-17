@@ -6,13 +6,15 @@
 	<!--
 	
 	net.jeeeyul.eclipse.themes.feature_2.1.8.I20140826-104830.jar
+	net.jeeeyul.pdetools.feature_1.2.5.I20140826-165151.jar
 	
 	-->
 	
 	<!-- Setup Start -->
-	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
+	<property name="prefix" value="net.jeeeyul.pdetools" />
 	<property name="repository" location="${basedir}/../update" />
-	<property name="versions" value="2.1.8.I20140826-104830" />
+	<property name="versions" value="1.2.5.I20140826-165151" />
+	
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
 
