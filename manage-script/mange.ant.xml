@@ -8,12 +8,13 @@
 	net.jeeeyul.eclipse.themes.feature_2.1.8.I20140826-104830.jar
 	net.jeeeyul.pdetools.feature_1.2.5.I20140826-165151.jar
 	net.jeeeyul.eclipse.themes.feature_2.2.0.I20140916-113709.jar
+	net.jeeeyul.eclipse.themes.feature_2.2.0.I20140918-120931.jar
 	-->
 	
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
 	<property name="repository" location="${basedir}/../update" />
-	<property name="versions" value="2.2.0.I20140916-113709" />
+	<property name="versions" value="2.2.0.I20140918-120931" />
 	
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
