@@ -3,6 +3,8 @@ layout: default
 title: jeeeyul.github.io
 ---
 
+[![GitTip] (http://img.shields.io/gratipay/jeeeyul.svg)](https://www.gratipay.com/jeeeyul/)
+
 # eclipse.jeeeyul.net
 
 This p2 repository was created to provide Eclipse plugin update site for Jeeeyul's projects:  
