@@ -4,14 +4,14 @@
 	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" classpath="${basedir}/libs/xmltask.jar" />
 
 	<!--
-	net.jeeeyul.eclipse.themes.feature_2.2.0.I20140920-180146.jar
-	net.jeeeyul.eclipse.themes.feature_2.2.0.I20141013-094758.jar
+
+	net.jeeeyul.eclipse.themes.feature_2.2.0.I20141013-113033.jar
 	-->
 	
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
 	<property name="repository" location="${basedir}/../update" />
-	<property name="versions" value="2.2.0.I20141013-094758" />
+	<property name="versions" value="2.2.0.I20141013-113033" />
 	
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
