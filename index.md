@@ -2,6 +2,7 @@
 layout: default
 title: jeeeyul.github.io
 ---
+<a href="https://www.gratipay.com/jeeeyul/"><img src="http://img.shields.io/gratipay/jeeeyul.svg"></a>
 
 # eclipse.jeeeyul.net
 
