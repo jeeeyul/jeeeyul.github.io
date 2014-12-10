@@ -12,7 +12,7 @@
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
 	<property name="repository" location="${basedir}/../update" />
-	<property name="versions" value="2.2.0.I20141027-201838" />
+	<property name="versions" value="2.2.0.I20141028-103448" />
 	
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
