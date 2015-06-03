@@ -9,12 +9,12 @@
 	net.jeeeyul.eclipse.themes.feature_2.2.0.I20141027-201838.jar
 	net.jeeeyul.eclipse.themes.feature_2.3.0.I20150603-213830.jar
 	-->
-	
+
 	<!-- Setup Start -->
 	<property name="prefix" value="net.jeeeyul.eclipse.themes" />
 	<property name="repository" location="${basedir}/../update" />
 	<property name="versions" value="2.3.0.I20150603-213830" />
-	
+
 	<!-- Setup End -->
 	<loadproperties srcfile="${basedir}/sign.properties" />
 
@@ -32,6 +32,11 @@
 	<target name="removeFeatureAndPlugins">
 		<foreach param="version" list="${versions}" target="remove" />
 
+		<antcall target="jarAndSignRepository">
+		</antcall>
+	</target>
+
+	<target name="jarAndSignRepository">
 		<jar destfile="${repository}/artifacts.jar">
 			<fileset dir="${repository}" includes="artifacts.xml" />
 		</jar>
@@ -47,7 +52,6 @@
 	</target>
 
 
-	
 	<target name="remove">
 		<echo>Remove ${prefix}*_${version}.* from ${repository}</echo>
 
