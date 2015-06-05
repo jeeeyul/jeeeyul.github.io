@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="net.jeeeyul.eclipse.themes.feature">
+      <category name="default"/>
+   </feature>
+   <feature id="net.jeeeyul.pdetools.feature">
+      <category name="default"/>
+   </feature>
+   <feature id="net.jeeeyul.swtend.feature">
+      <category name="default"/>
+   </feature>
+   <category-def name="default" label="Jeeeyul's Eclipse Plugins (Beta)"/>
+</site>
