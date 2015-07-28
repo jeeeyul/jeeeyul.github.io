@@ -10,7 +10,6 @@ eclipse \
 	-compress
 eclipse\
 	-nosplash \
-	-console -consolelog \
 	-application org.eclipse.equinox.p2.publisher.CategoryPublisher \
 	-metadataRepository file:$PWD \
 	-categoryDefinition file:$PWD/category.xml \
