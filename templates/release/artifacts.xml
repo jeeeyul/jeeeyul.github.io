@@ -9,4 +9,5 @@
 		<rule filter='(&amp; (classifier=org.eclipse.update.feature))'
 			output='${repoUrl}/features/${id}_${version}.jar' />
 	</mappings>
+
 </repository>

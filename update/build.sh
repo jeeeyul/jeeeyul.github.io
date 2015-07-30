@@ -1,5 +1,5 @@
 rm artifacts.* content.*
-cp ../beta-template/* .
+cp ../templates/release/* .
 eclipse \
 	-nosplash \
 	-application org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher \
