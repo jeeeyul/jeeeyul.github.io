@@ -1,6 +1,6 @@
 rm artifacts.* content.*
 cp ../templates/beta/* .
-eclipse \
+./eclipse \
 	-nosplash \
 	-application org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher \
 	-metadataRepository file:$PWD \
@@ -8,7 +8,7 @@ eclipse \
 	-source $PWD \
 	-publishArtifact \
 	-compress
-eclipse\
+./eclipse\
 	-nosplash \
 	-application org.eclipse.equinox.p2.publisher.CategoryPublisher \
 	-metadataRepository file:$PWD \
